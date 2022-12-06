@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS alapok</title>
+    <link rel="stylesheet" href="mario.css">
+</head>
+<body>
+    <div id="frame">
+        <div id="mario"></div>
+    </div>
+    
+    <table>
+        <tr>
+            <td colspan="3">
+                <button onclick="horizontal(-50)" id="up">Up</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button onclick="vertical(-50)" id="left">Left</button>
+            </td>
+            <td>
+                <button onclick="horizontal(50)" id="down">Down</button>
+            </td>
+            <td>
+                <button onclick="vertical(50)" id="right">Right</button>
+            </td>
+        </tr>
+    </table>
+
+    <script src="mario.js"></script>
+</body>
+</html>

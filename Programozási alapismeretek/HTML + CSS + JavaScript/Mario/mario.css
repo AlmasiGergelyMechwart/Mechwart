@@ -1,0 +1,25 @@
+body{
+    background-color: darkgrey;
+}
+
+#frame{
+    width: 800px;
+    height: 600px;
+    background-color: greenyellow;
+    position: relative;
+}
+
+#mario{
+    width: 50px;
+    height: 50px;
+    background-color: tomato;
+    position: absolute;
+}
+
+table{
+    text-align: center;
+}
+
+button{
+    width: 50px;
+}

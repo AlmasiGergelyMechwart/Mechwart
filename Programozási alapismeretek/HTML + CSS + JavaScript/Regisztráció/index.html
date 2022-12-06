@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regisztráció</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tarolo">
+        <form action="">
+            <label for="username">Felhasználónév:</label>
+            <input type="text" name="username" id="username">
+            
+            <label for="useremail">Email:</label>
+            <input type="email" name="useremail" id="useremail">
+            
+            <label for="pwd">Jelszó:</label>
+            <input type="password" name="pwd" id="pwd">
+
+            <label for="date">Születési idő:</label>
+            <input type="date" name="date" id="date">
+
+            <label for="cast">Kaszt:</label>
+            <select name="cast" id="cast">
+                <option value="warrior">Warrior</option>
+                <option value="mage">Mage</option>
+                <option value="rogue">Rogue</option>
+            </select>
+
+            <div id="gender-tarolo">
+                <label for="male" class="gender-label">Férfi:</label>
+                <input type="radio" name="gender" id="male" value="male">
+                <label for="female" class="gender-label">Nő:</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+
+            <input type="submit" value="Regisztrálok">
+        </form>
+    </div>
+</body>
+</html>

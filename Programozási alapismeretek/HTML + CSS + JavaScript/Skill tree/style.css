@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+}
+
+#frame{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#profile-pic{
+    width: 200px;
+    height: 200px;
+    background-image: url(profile-pic.jpg);
+    background-size: cover;
+    margin: auto;
+    border: 3px solid black;
+}
+
+#username, #ExperiencePoints {
+    text-align: center;
+}
+
+.row>div{
+    padding: 10px;
+}
+
+.elso-oszlop{
+    width: 80px;
+}
+
+.masodik-oszlop{
+    width: 30px;
+}
+
+.ez-is-oszlop{
+    width: 150px;
+}
+
+tr{
+    height: 40px;
+}

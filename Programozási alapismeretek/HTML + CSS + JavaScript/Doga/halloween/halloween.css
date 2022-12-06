@@ -1,0 +1,46 @@
+body {
+    background-color: #1A1819;
+}
+
+h1, h2, p, ul {
+    color: #FF7C3A;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+#macskákat_es_denevereket_abrazolo_kep {
+    width: 100%;
+}
+
+#tokfej {
+    position: relative;
+    width: 650px;
+    height: 500px;
+    border: solid 1px white;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.tok {
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+#tok1 {
+    left: 225px;
+    top: 120px;
+    background-color: #f3ec84;
+    z-index: 2;
+}
+
+#tok2 {
+    left: 140px;
+    top: 105px;
+    background-color: #eed04c;
+    z-index: 1;
+    -webkit-box-reflect: right -35px;
+}

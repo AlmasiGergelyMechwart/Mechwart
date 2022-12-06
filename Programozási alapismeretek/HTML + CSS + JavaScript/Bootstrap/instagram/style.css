@@ -1,0 +1,12 @@
+.div-kep{
+    height: 200px;
+    width: 200px;
+    background-color: grey;
+    margin: auto;
+    background-size: cover;
+    background-position: center;
+}
+
+div[class*="col-"]{
+    padding: 20px;
+}

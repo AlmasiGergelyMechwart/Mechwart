@@ -1,0 +1,36 @@
+__HALLOWEEN__
+
+Nyisd meg a halloween.html nevű fájlt! A továbbiakban ezzel kell majd dolgoznod. Segítségként használhatod a minta.png képet, DE csak a következő leírt feladatokra kapsz pontot!
+
+1. Hozz létre egy halloween.css nevű fájlt [1 pont] és hivatkozz rá a html fájlod fejrészében [1 pont]!
+
+2. Alakítsd ki a címsorokat! (A "Halloween" 1-es szintű, a "Kelták", "Halloween Magyarországon" és a "Halottak hete" 2-es szintű címsorok). [2 pont]
+
+3. Alakítsd ki a bekezdéseket a mintának megfelelően! [2 pont]
+
+4. Hozd létre a számozatlan felsorolást a mintának megfelelően! [3 pont]
+
+5. Szúrd be a macskákat és denevéreket ábrázoló képet a dokumentum elejére! [1 pont]
+
+6. CSS-ben végezd el a következő formázási beállításokat:
+- Az egész oldal háttérszíne legyen #1A1819 [1 pont]
+- Minden szöveg színe legyen #FF7C3A [2 pont]
+- Az egyes szintű címsor mérete legyen 40px [1 pont]
+- A kép szélessége legyen 100% [1 pont]
+
+ÖSSZESEN: 15 pont
+
+13 - 15 | 5
+11 - 12 | 4
+9 - 10  | 3
+7 - 8   | 2
+0 - 6   | 1
+
+__SZORGALMI FELADAT__
+plusz pontért, vagy ha nem kell és NAGYON jó, akkor ötösért:
+
+Hozd létre HTML és CSS segítségével a minta alján látható tökfejet (nem kell tökéletesen egyeznie, elég ha hasonlít)!
+
+Segítségként:
+- Én egy 650px széles és 500px magas div-et használtam keretnek.
+- A html-ben hátrébb lévő DIV-ek kitakarják az előrébb lévő DIV-eket!
