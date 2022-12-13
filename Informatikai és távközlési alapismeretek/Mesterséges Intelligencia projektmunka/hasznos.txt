@@ -1,3 +1,17 @@
 http://pepperrobot.hu/mesterseges-intelligencia/
 https://iotzona.hu/egeszseg/mesterseges-intelligencia-az-egeszsegugyben
 https://ec.europa.eu/info/strategy/priorities-2019-2024/europe-fit-digital-age/excellence-trust-artificial-intelligence_hu
+
+https://atozofai.withgoogle.com/
+
+képfelismerő:
+https://atozofai.withgoogle.com/intl/hu/image-recognition/
+
+beszédfelismerő:
+https://atozofai.withgoogle.com/intl/hu/speech-recognition/
+
+deepfake:
+https://atozofai.withgoogle.com/intl/hu/fakes/
+
+röntgen:
+https://atozofai.withgoogle.com/intl/hu/x-ray/
