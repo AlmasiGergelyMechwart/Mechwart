@@ -1,0 +1,27 @@
+body{
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(bg.jpg);
+    background-size: cover;
+}
+
+h1{
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+}
+
+img{
+    width: 80%;
+    max-width: 400px;
+    transition: 0.1s;
+}
+
+img:active{
+    width: 82%;
+    max-width: 405px;
+}

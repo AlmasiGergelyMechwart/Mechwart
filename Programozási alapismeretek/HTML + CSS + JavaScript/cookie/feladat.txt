@@ -1,0 +1,28 @@
+__HTML__
+1. Hozz létre egy szabályos HTML fájlt cookie.html néven! // 1 pont
+2. Importáld be a cookie.css fájlt! // 1 pont
+3. A HTML fájlban hozz létre egy div-et "cookie-holder" azonosítóval! // 1 pont
+4. A cookie-holder azonosítóval ellátott div-en belül hozd létre a következőket:
+- helyezz el egy egyes szintű címsort (ez fogja majd megjeleníteni a pontokat, most legyen "0" bele írva), lásd el "points" azonosítóval // 2 pont
+- helyezd el benne a "cookie.png" képet, és lásd el "cookie" azonosítóval // 2 pont
+
+__JS__
+5. JavaScript-ben hozz létre egy funkciót/függvényt cookieClicked() néven, amely 1-el növeli a "points" azonosítóval ellátott címsoron belüli számot // 2 pont
+6. Állítsd be, hogy a "cookie" azonosítóval ellátott képre kattintva (onclick) fusson le a cookieClicked() függvény! // 1 pont
+
+__CSS__
+7. A címsor betűszíne legyen fehér // 1 pont
+8. Az egész oldal háttere legyen a "bg.jpg" kép, a teljes oldalon jelenjen meg, ismétlődés nélkül. // 2 pont
+9. A "cookie.png" mérete legyen 80%, de maximum 400px // 2 pont
+
+Összesen:
+HTML - 7 pont
+JS - 3 pont
+CSS - 5 pont
+-------------
+
+13 - 15 |5
+10 - 12 |4
+8 - 10  |3
+5 - 7   |2
+0 - 4   |1
