@@ -1,0 +1,29 @@
+Az öntanuló algoritmusokat rengeteg dologra lehet használni, én próbáltam hétköznapi és/vagy hasznos felhasználásukról információt gyűjteni.
+
+1. dia (Felismerő programok)
+
+A képfelismerés az a technológia, amely lehetővé teszi az AI számára a körülöttünk lévő világ tárgyainak felismerését és kategorizálását.
+Mint azt hallottuk, a képfelismerő rendszerek megtanítaníthatóak arra, hogy bármit felismerjenek az emberektől a nevezetes látnivalókig vagy akár kisállatokig.
+
+A beszédfelismerési rendszereket arra tanítjuk, hogy felismerjék, mit mondanak az emberek.
+Ezek a rendszerek alkotják minden alapját, a diktálási szoftverektől a fordítási eszközökön át a hanggal vezérelhető okoseszközökig.
+
+
+2. dia (Hamisítványok)
+
+Az AI új lehetőségeket biztosított arra, hogy hiperrealisztikus „deepfake” képanyagokat, beszédeket, zenéket és videókat hozzanak létre.
+
+A mesterséges intelligencia segítségével valós anyagokat elemeznek és azokat úgy manipulálják, hogy az valósághoz zavarba ejtően hasonlító kitalált tartalmakat hozzon létre.
+
+Ezeket a néhány éve lehetetlennek ítélt technológiákat számos területen alkalmazzák például a zeneiparban, sőt a hollywoodi filmekben látható CGI-t is így csinálják.
+
+Míg nagy részük szórakoztató és fantáziadús, ha nem megfelelő módon használják őket, a társadalomra káros valótlan információk generálhatók velük. A közbeszédbe beférkőző meggyőző hamisított tartalmak jelentős károkat okozhatnak a köztudatban és az emberek bizalmában.
+
+
+3. dia (Röntgen)
+
+Manapság már számos radiológus mesterséges intelligenciát használó eszközök segítségével tanulmányozza a röntgenképeket a rendellenességek észlelésére, így gyorsabban és (esetleg) pontosabban képesek diagnosztizálni az emberek betegségeit.
+
+A mesterséges intelligencián alapuló képalkotási rendszereket korábbi vizsgálatok ezreinek segítségével tanítják be, így azonosítani tudják azokat az eltéréseket, amelyek valamilyen betegség meglétét jelezhetik.
+
+Ezek a rendszerek aztán képesek megjelölni a röntgenkép adott területét, hogy egy orvos alaposabban megvizsgálhassa, így a mesterséges intelligencia és az orvosok kiegészítik egymás tevékenységét.
