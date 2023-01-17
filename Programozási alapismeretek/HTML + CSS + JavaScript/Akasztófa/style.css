@@ -6,32 +6,38 @@ body{
     position: absolute;
     left: 50%;
     top: 50%;
-    width: 80%;
-    max-width: 800px;
-    height: 80%;
-    max-height: 400px;
     transform: translate(-50%, -50%);
+    max-width: 80%;
+    max-height: 80%;
+    aspect-ratio: 11/8;
     border: 1px solid red;
 }
 
 
 #left-wrapper, #right-wrapper, #status-wrapper{
     border: 1px solid black;
-}
-
-#left-wrapper, #right-wrapper{
-    width: 50%;
-    min-height: 300px;
     box-sizing: border-box;
     float: left;
 }
 
-#left-wrapper{}
+#left-wrapper, #right-wrapper{
+    width: 50%;
+    aspect-ratio: 10/11;
+}
 
-#right-wrapper{}
+#left-wrapper img{
+    margin: auto;
+    width: 80%;
+}
+
+#right-wrapper button{
+    width: 20%;
+    aspect-ratio: 5/3;
+}
 
 #status-wrapper{
-    height: 100%;
+    width: 100%;
+    aspect-ratio: 11/2;
 }
 
 #status{
