@@ -136,10 +136,10 @@
       <h2 class="display-4">Budapesti viszonylatok</h2> 
       <p>Budapesten az első trolibuszjárat 1933. december 16-án indult el Óbudán, a Vörösvári út és az Óbudai temető között 7-es jelzéssel. A pesti hálózat első, Király utcai vonalát Sztálin születésének 70. évfordulóján, 1949. december 21-én nyitották meg. A trolibuszjárat ennek tiszteletére a 70-es jelzést kapta. Ezt követően az 1950-es években szinte minden évben indultak új járatok. Napjainkban a vonalhálózat 13 alap- és 3 betétjáratból áll, amit a Budapesti Közlekedési Központ megrendelésére a Budapesti Közlekedési Zrt. üzemeltet. A hálózat hossaz 75,5km, a vonalak száma 16, összesen 172 megállóval.</p>
       <p>Az alábbi űrlapon megnézheti a kétszámjegyű járatszámok viszonylatait:</p>
-      <form method="post">
+      <form method="post" id="jaratviszonylatok">
       <p>Járatszám: 
       <br>
-      <select onclick="vegallomasKiiras(this.value)">       
+      <select onchange="vegallomasKiiras(this.value)" id="jaratSzam">       
       <script>
         vegallomasNevek.forEach(jaratKiiras);
       </script>
