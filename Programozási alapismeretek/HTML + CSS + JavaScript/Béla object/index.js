@@ -11,5 +11,8 @@ let bela = {
     },
 }
 
-console.log(bela.teljesNev())
-console.log(bela.kocsi.szin)
+let text = document.getElementById("text")
+
+text.innerText
+    += bela.teljesNev() + `\n`
+    + bela.kocsi.szin
