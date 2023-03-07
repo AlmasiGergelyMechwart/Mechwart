@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kő Papír Olló</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="container">
         <div class="side-panel" id="player-panel">
-            <div class="choice"></div>
-            <button class="choice-button">Kő</button>
-            <button class="choice-button">Papír</button>
-            <button class="choice-button">Olló</button>
+            <div class="choice" id="player-choice">&#9994</div>
+            <div id="button-holder">
+                <button class="choice-button" onclick="choiceButtonClicked(this)">Kő</button>
+                <button class="choice-button" onclick="choiceButtonClicked(this)">Papír</button>
+                <button class="choice-button" onclick="choiceButtonClicked(this)">Olló</button>
+            </div>
         </div>
         <div class="side-panel" id="enemy-panel">
-            <div class="choice"></div>
+            <div class="choice" id="enemy-choice">&#9994</div>
         </div>
     </div>
 </body>
