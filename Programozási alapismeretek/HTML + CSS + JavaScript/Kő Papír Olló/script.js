@@ -16,18 +16,50 @@ choiceButtons[0].innerHTML = rock.emoji;
 choiceButtons[1].innerHTML = paper.emoji;
 choiceButtons[2].innerHTML = scissors.emoji;
 
+let player = document.getElementById('player-choice').firstChild;
+let enemy = document.getElementById('enemy-choice').firstChild;
+
+let playerChoice;
+let enemyChoice;
+
 function choiceButtonClicked(emoji) {
-    document.getElementById('player-choice').innerHTML = emoji.innerHTML
-    enemyChoice();
+    shake();
+    player.addEventListener("animationend", function() {
+        player.innerHTML = emoji.innerHTML
+        if (emoji.innerHTML == rock.emoji)
+            playerChoice = 1
+        else if (emoji.innerHTML == paper.emoji)
+            playerChoice = 2;
+        else if (emoji.innerHTML == scissors.emoji)
+            playerChoice = 3;
+        enemyChoose();
+        result();
+    })
 }
 
-function enemyChoice() {
+function enemyChoose() {
     let random = Math.floor(Math.random()*3)
     if (random == 0){
-        document.getElementById('enemy-choice').innerHTML = rock.emoji
+        enemy.innerHTML = rock.emoji
     } else if (random == 1){
-        document.getElementById('enemy-choice').innerHTML = paper.emoji
+        enemy.innerHTML = paper.emoji
     } else{
-        document.getElementById('enemy-choice').innerHTML = scissors.emoji
+        enemy.innerHTML = scissors.emoji
     }
+}
+
+function shake() {
+    player.innerHTML = rock.emoji;
+    enemy.innerHTML = rock.emoji;
+
+    player.style.animation = "none"
+    enemy.style.animation = "none"
+    setTimeout(() => {
+        player.style.animation = "shake .6s 4"
+        enemy.style.animation = "shake .6s 4"
+    }, 1);
+}
+
+function result() {
+
 }

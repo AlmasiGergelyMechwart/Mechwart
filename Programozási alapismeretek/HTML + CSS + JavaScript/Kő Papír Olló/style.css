@@ -46,9 +46,27 @@ body {
 }
 
 #player-choice {
-    transform: rotateY(180deg) rotateZ(-90deg);
+    transform: rotateZ(-90deg) rotateX(180deg);
 }
 
 #enemy-choice {
     transform: rotateZ(-90deg);
+}
+
+#player-choice span, #enemy-choice span {
+    transform-origin: bottom;
+}
+
+@keyframes shakee {
+    15%  {transform: rotateZ(10deg)}
+    30%  {transform: rotateZ(0deg)}
+    45%  {transform: rotateZ(10deg)}
+    60%  {transform: rotateZ(0deg)}
+    75%  {transform: rotateZ(10deg)}
+    90%  {transform: rotateZ(0deg)}
+}
+
+@keyframes shake {
+    50%  {transform: rotateZ(10deg)}
+    100%  {transform: rotateZ(0deg)}
 }
