@@ -48,7 +48,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#regen">...</a>
-          </li>          
+          </li>
         </ul>
       </div>
     </nav>
@@ -83,6 +83,8 @@
           <div class="row">
             <div class="col-md-5">
               <img src="kepek/ciganycsuk_him.png" alt="Cigánycsuk - Hím" title="Cigánycsuk - Hím"
+                class="img-fluid mx-auto d-block w-75 img-thumbnail drop-shadow">
+              <img src="kepek/ciganycsuk_tojo.png" alt="Cigánycsuk - Tojó" title="Cigánycsuk - Tojó"
                 class="img-fluid mx-auto d-block w-75 img-thumbnail drop-shadow">
             </div>
             <div class="col-md-7">
@@ -151,17 +153,17 @@
         </div>
       </div>
 
-      <div id="regen" class="col-md-4 col-xl-4 nyertes">
-        <p>Korábbi nyertesek</p>
+      <div id="regen" class="col-md-6 col-xl-4 nyertes">
+        <h2>Korábbi nyertesek</h2>
         <p>1979 óta minden évben kihirdették az év madarát, párszor fordult elő hogy egy madár két egymást követő évben is elnyertes a címet.</p>
         <p>Melyik évben melyik madár viselhette az "Év madara" címet?</p>
         <p class="font-italic">A válaszhoz használd az időszalagot vagy nézz meg egy <span id="velGomb" onclick="veletlen();">véletlen</span> évszámot!</p>        
         <div id="evszalag">         
-          <input type="range" id="ev" min="1979" max="2021" title="Válassz évet!">        
+          <input type="range" id="ev" min="1979" max="2015" title="Válassz évet!">        
         </div>
         <div id="nevjegy">
           <h2><span id="evszam">?</span> <small> év madara</small></h2>
-          <h3>?</h3>
+          <h3 id="madar">?</h3>
         </div>
         <br style="clear: both;">
         <p class="font-italic">A teljes lista a Wikipédia "<a href="https://hu.wikipedia.org/wiki/Az_%C3%A9v_madara" target="_blank">Az év madara</a>" szócikkében olvasható!</p>

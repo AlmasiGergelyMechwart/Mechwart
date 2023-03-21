@@ -26,6 +26,7 @@ nav {
 
 a {
     color: rgb(32, 30, 49);
+    font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -110,4 +111,8 @@ input[type="range"] {
     color: rgb(32, 30, 49);
     font-weight: bold;
     cursor: pointer;
+}
+
+.lista {
+    line-height: 200%;
 }
