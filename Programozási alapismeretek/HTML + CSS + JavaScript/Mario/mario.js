@@ -15,7 +15,7 @@ function vertical(x){
         mario.style.left = marioX + "px"
     }
     if (x<0)
-    mario.innerHTML += "<style>#mario{transform:scaleX(-1);}</style>"
+    mario.style.transform = "scaleX(-1)"
     else
-    mario.innerHTML += "<style>#mario{transform:scaleX(1);}</style>"
+    mario.style.transform = "scaleX(1)"
 }
