@@ -33,6 +33,7 @@ footer {
     height: 80%;
     margin: auto;
     perspective: 1000px;
+    transition: opacity 1s;
 }
 
 .flip-box-inner {

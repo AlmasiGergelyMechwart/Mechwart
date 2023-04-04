@@ -58,23 +58,39 @@ for (let i = 0; i < iconList.length; i++) {
 function test() {
     let selectedCards = document.getElementsByClassName("selected")
 
+    let cards = [selectedCards[0], selectedCards[1]] 
+
     let card1 = selectedCards[0]
     let card2 = selectedCards[1]
-
-    card1.classList.remove("selected")
-    card2.classList.remove("selected")
-    if (card1.innerHTML === card2.innerHTML){
+    
+    if (card1.innerHTML == card2.innerHTML){
+        card1.classList.remove("selected")
+        card2.classList.remove("selected")
         card1.classList.add("found")
         card2.classList.add("found")
+        for (let i=0; i<2; i++) {
+            cards[i].style.backgroundColor = "black";
+        }
+        // cards.forEach(card => {
+        //     card.style.backgroundColor = "black";
+        // });
     } else {
         // flipBox.addEventListener("transitionend", function() {
-        //     setTimeout(() => {
-                
-        //     }, 1000);
+            setTimeout(() => {
+                card1.classList.remove("selected")
+                card2.classList.remove("selected")
+                selectedCards[0].style.backgroundColor = "black";
+                selectedCards[1].style.backgroundColor = "black";
+            }, 1000);
         // }, {once : true})
     }
 
-    if (selectedCards.length == iconList.length) {
-        alert("Győztél lol")
+    let found = document.getElementsByClassName("found")
+    if (found.length == iconList.length) {
+        setTimeout(() => {
+            found.forEach(card => {
+                card.style.opacity = "0%"
+            });
+        }, 1000);
     }
 }
