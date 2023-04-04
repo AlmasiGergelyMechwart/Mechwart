@@ -10,7 +10,7 @@ body {
 .container {
     min-height: 50vh;
     width: 80%;
-    background-color: rgba(255, 69, 0, 0.5);
+    background-color: rgba(255, 70, 0, 0.5);
 }
 
 .side-panel {
@@ -57,16 +57,18 @@ body {
     transform-origin: bottom;
 }
 
-@keyframes shakee {
-    15%  {transform: rotateZ(10deg)}
-    30%  {transform: rotateZ(0deg)}
-    45%  {transform: rotateZ(10deg)}
-    60%  {transform: rotateZ(0deg)}
-    75%  {transform: rotateZ(10deg)}
-    90%  {transform: rotateZ(0deg)}
-}
-
 @keyframes shake {
     50%  {transform: rotateZ(10deg)}
-    100%  {transform: rotateZ(0deg)}
+}
+
+#endText {
+    top: 10vh;
+    height: 10vh;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 350%;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
 }

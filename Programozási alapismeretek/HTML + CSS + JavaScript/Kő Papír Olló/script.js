@@ -23,28 +23,30 @@ let playerChoice;
 let enemyChoice;
 
 function choiceButtonClicked(emoji) {
+    document.getElementById("endText").innerText = "";
     shake();
     player.addEventListener("animationend", function() {
         player.innerHTML = emoji.innerHTML
-        if (emoji.innerHTML == rock.emoji)
-            playerChoice = 1
-        else if (emoji.innerHTML == paper.emoji)
-            playerChoice = 2;
-        else if (emoji.innerHTML == scissors.emoji)
-            playerChoice = 3;
+        playerChoice = emoji.classList.item(1)
         enemyChoose();
         result();
-    })
+    }, {once : true})
 }
 
 function enemyChoose() {
-    let random = Math.floor(Math.random()*3)
-    if (random == 0){
-        enemy.innerHTML = rock.emoji
-    } else if (random == 1){
-        enemy.innerHTML = paper.emoji
-    } else{
-        enemy.innerHTML = scissors.emoji
+    switch (Math.floor(Math.random()*3)) {
+        case 0:
+            enemy.innerHTML = rock.emoji
+            enemyChoice = 1
+            break;
+        case 1:
+            enemy.innerHTML = paper.emoji
+            enemyChoice = 2
+            break;
+        case 2:
+            enemy.innerHTML = scissors.emoji
+            enemyChoice = 3
+            break;
     }
 }
 
@@ -61,5 +63,11 @@ function shake() {
 }
 
 function result() {
-
+    if (playerChoice == enemyChoice) {
+        document.getElementById("endText").innerText = "Döntetlen";
+    } else if (playerChoice == enemyChoice+1 || playerChoice == enemyChoice-2) {
+        document.getElementById("endText").innerText = "Győztél";
+    } else if (playerChoice == enemyChoice-1 || playerChoice == enemyChoice+2) {
+        document.getElementById("endText").innerText = "Vesztettél";
+    }
 }
