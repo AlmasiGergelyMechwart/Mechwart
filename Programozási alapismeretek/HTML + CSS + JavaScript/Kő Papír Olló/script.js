@@ -26,6 +26,8 @@ function choiceButtonClicked(emoji) {
     document.getElementById("endText").innerText = "";
     shake();
     player.addEventListener("animationend", function() {
+        player.style.animation = "none"
+        enemy.style.animation = "none"
         player.innerHTML = emoji.innerHTML
         playerChoice = emoji.classList.item(1)
         enemyChoose();
@@ -54,12 +56,8 @@ function shake() {
     player.innerHTML = rock.emoji;
     enemy.innerHTML = rock.emoji;
 
-    player.style.animation = "none"
-    enemy.style.animation = "none"
-    setTimeout(() => {
-        player.style.animation = "shake .6s 4"
-        enemy.style.animation = "shake .6s 4"
-    }, 1);
+    player.style.animation = "shake .6s 4"
+    enemy.style.animation = "shake .6s 4"
 }
 
 function result() {
