@@ -1,0 +1,32 @@
+.doboz {
+    background-color: rgb(200, 200, 200);
+    height: 80%;
+    width: 80%;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#felso, #also {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#felso {
+    width: 90%;
+    display: grid;
+    text-align: center;
+}
+
+#also {
+    top: 80%;
+}
+
+#felso h3 {
+    font-size: 4em;
+    margin: 0px 15px;
+}
