@@ -23,6 +23,8 @@ function gurit() {
             let dobas = document.createElement("h3")
             felso.appendChild(dobas)
 
+            dobas.style.margin = "auto"
+
             dobas.innerText = random(oldalszam)
         }
     } else {
