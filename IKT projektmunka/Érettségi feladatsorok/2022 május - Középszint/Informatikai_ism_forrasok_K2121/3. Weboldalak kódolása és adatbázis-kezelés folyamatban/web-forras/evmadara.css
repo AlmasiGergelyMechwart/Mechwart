@@ -7,6 +7,7 @@ body {
 
 header {        
     overflow: hidden; 
+    max-height: 400px;
 }
 
 header img {
@@ -50,6 +51,7 @@ p {
 
 .dijazott {    
     letter-spacing: 1px;
+    font-style: italic;
 }
 
 .drop-shadow {

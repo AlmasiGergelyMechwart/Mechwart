@@ -84,6 +84,7 @@
             <div class="col-md-5">
               <img src="kepek/ciganycsuk_him.png" alt="Cigánycsuk - Hím" title="Cigánycsuk - Hím"
                 class="img-fluid mx-auto d-block w-75 img-thumbnail drop-shadow">
+              <br>
               <img src="kepek/ciganycsuk_tojo.png" alt="Cigánycsuk - Tojó" title="Cigánycsuk - Tojó"
                 class="img-fluid mx-auto d-block w-75 img-thumbnail drop-shadow">
             </div>
@@ -159,7 +160,7 @@
         <p>Melyik évben melyik madár viselhette az "Év madara" címet?</p>
         <p class="font-italic">A válaszhoz használd az időszalagot vagy nézz meg egy <span id="velGomb" onclick="veletlen();">véletlen</span> évszámot!</p>        
         <div id="evszalag">         
-          <input type="range" id="ev" min="1979" max="2015" title="Válassz évet!">        
+          <input type="range" id="ev" min="1979" max="2015" title="Válassz évet!" onchange="frissit()">        
         </div>
         <div id="nevjegy">
           <h2><span id="evszam">?</span> <small> év madara</small></h2>
