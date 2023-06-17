@@ -33,7 +33,7 @@ footer {
     height: 80%;
     margin: auto;
     perspective: 1000px;
-    transition: opacity 1s;
+    transition: opacity 2s;
 }
 
 .flip-box-inner {
@@ -82,5 +82,5 @@ footer {
 
 .found .flip-box-inner .flip-box-back {
     background-color: green;
-    transition: background-color 1s ease-out;
+    transition: background-color 2s ease-out;
 }

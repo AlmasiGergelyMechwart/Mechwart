@@ -35,15 +35,6 @@ for (let i = 0; i < iconList.length; i++) {
     flipBoxBack.classList.add("label")
     flipBoxBack.appendChild(label)
 
-
-
-    // let card = document.createElement("div")
-    // let label = document.createElement("span")
-    // card.classList.add("card")
-    // label.classList.add("label")
-    // playground.appendChild(card)
-    // card.appendChild(label)
-
     flipBox.onclick = () => {
         if (document.getElementsByClassName("selected").length >= 2) return
         if (flipBox.classList.contains("found")) return;
@@ -51,46 +42,42 @@ for (let i = 0; i < iconList.length; i++) {
         label.innerHTML=iconList[i];
         flipBox.classList.add("selected")
 
-        if (document.getElementsByClassName("selected").length == 2) test();
+        let selectedCards = document.getElementsByClassName("selected")
+        if (selectedCards.length != 2) return;
+
+        //TEST
+
+        let cards = [selectedCards[0], selectedCards[1]] 
+
+        let card1 = selectedCards[0]
+        let card2 = selectedCards[1]
+        
+        if (card1.innerHTML == card2.innerHTML){
+            for (let i=0; i<2; i++) {
+                cards[i].classList.remove("selected")
+                cards[i].classList.add("found")
+            }
+        } else {
+            flipBox.addEventListener("transitionend", function() {
+                // setTimeout(() => {
+                    for (let i=0; i<2; i++) {
+                        cards[i].classList.remove("selected")
+                    }
+                // }, 1000);
+            }, {once : true})
+        }
+
+        let found = document.getElementsByClassName("found")
+        if (found.length == iconList.length) {
+            setTimeout(() => {
+                for (let i=0; i<found.length; i++) {
+                    found[i].style.opacity = 0
+                }
+            }, 3000);
+        }
     }
 }
 
 function test() {
-    let selectedCards = document.getElementsByClassName("selected")
-
-    let cards = [selectedCards[0], selectedCards[1]] 
-
-    let card1 = selectedCards[0]
-    let card2 = selectedCards[1]
     
-    if (card1.innerHTML == card2.innerHTML){
-        card1.classList.remove("selected")
-        card2.classList.remove("selected")
-        card1.classList.add("found")
-        card2.classList.add("found")
-        for (let i=0; i<2; i++) {
-            cards[i].style.backgroundColor = "black";
-        }
-        // cards.forEach(card => {
-        //     card.style.backgroundColor = "black";
-        // });
-    } else {
-        // flipBox.addEventListener("transitionend", function() {
-            setTimeout(() => {
-                card1.classList.remove("selected")
-                card2.classList.remove("selected")
-                selectedCards[0].style.backgroundColor = "black";
-                selectedCards[1].style.backgroundColor = "black";
-            }, 1000);
-        // }, {once : true})
-    }
-
-    let found = document.getElementsByClassName("found")
-    if (found.length == iconList.length) {
-        setTimeout(() => {
-            found.forEach(card => {
-                card.style.opacity = "0%"
-            });
-        }, 1000);
-    }
 }
