@@ -1,6 +1,7 @@
 import random
+import io
 
-wordFile = open("magyar-szavak.txt", "r")
+wordFile = io.open("magyar-szavak.txt", mode="r", encoding="utf-8")
 words = []
 i=0
 while (True):
@@ -19,13 +20,16 @@ while (True):
 wordFile.close()
 
 word = "Alma"
-word = words[random.randint(0, len(words)-1)]
-print(word) #Nem jól veszi be az ékezeteket
+word = words[random.randint(0, len(words)-1)].strip()
+# print(word)
 wordL = word.lower()
 state = "_"*len(word)
 
 MAX_FAILS = 10
 currentFails = 0
+notIn = []
+
+print(state)
 
 while word != state:
     
@@ -40,8 +44,11 @@ while word != state:
                 stateList = list(state)
                 stateList[i] = word[i]
                 state = "".join(stateList)
+    elif c in notIn:
+        print("Ezt már próbáltad, nincs benne") #valamiért betűkkel nem működik
     else:
         currentFails+=1
+        notIn.append(c)
         print("Hibák száma:", currentFails)
 
     print(state)
