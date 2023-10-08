@@ -17,7 +17,7 @@ while (True):
 wordsFile.close()
 
 word = words[random.randint(0, len(words)-1)]
-print(word)
+# print(word)
 wordL = word.lower()
 state = "_"*len(word)
 
