@@ -1,37 +1,34 @@
 import random
 import io
 
-wordFile = io.open("magyar-szavak.txt", mode="r", encoding="utf-8")
+wordsFile = io.open("magyar-szavak.txt", mode="r", encoding="utf-8")
 words = []
-i=0
+
 while (True):
     try:
-        temp = wordFile.readline()
+        temp = wordsFile.readline()
         if temp != "":
-            words.append(temp)
+            words.append(temp.strip())
         else:
             break
     except:
         break
 
-    # print(words[i])
-    # i+=1
-# print(i)
-wordFile.close()
+wordsFile.close()
 
-word = "Alma"
-word = words[random.randint(0, len(words)-1)].strip()
-# print(word)
+word = words[random.randint(0, len(words)-1)]
+print(word)
 wordL = word.lower()
 state = "_"*len(word)
 
 MAX_FAILS = 10
 currentFails = 0
-notIn = []
+charsNotInWord = []
 
-print(state)
 
 while word != state:
+    
+    print(state)
     
     c = input("Tipp: ").lower()
     if len(c) > 1:
@@ -44,18 +41,16 @@ while word != state:
                 stateList = list(state)
                 stateList[i] = word[i]
                 state = "".join(stateList)
-    elif c in notIn:
-        print("Ezt már próbáltad, nincs benne") #valamiért betűkkel nem működik
+    elif c in charsNotInWord:
+        print("Ezt már próbáltad, nincs benne")
     else:
         currentFails+=1
-        notIn.append(c)
+        charsNotInWord.append(c)
         print("Hibák száma:", currentFails)
 
-    print(state)
-
-    if word == state:
-        print("Gratulálok, nertél ^^")
-    elif currentFails >= MAX_FAILS:
-        print("Vesztettél :<")
+    if currentFails >= MAX_FAILS:
+        print("Vesztettél")
         print(f'A szó "{word}" volt')
         break
+else:
+    print("Gratulálok, nertél")
