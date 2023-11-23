@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT directory (directory|file)*>
+<!ATTLIST directory name CDATA #REQUIRED>
+<!ELEMENT file (#PCDATA)>
+<!ATTLIST file name CDATA #REQUIRED>
+<!ATTLIST file size CDATA #REQUIRED>
