@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sets SYSTEM "lego.dtd">
+<sets>
+    <set>
+        <number>10273</number>
+        <name>Haunted House</name>
+        <parts>3188</parts>
+        <minifigures>10</minifigures>
+        <tag>creator</tag>
+        <tag>expert</tag>
+        <tag>recreation</tag>
+        <tag>fairground collection</tag>
+    </set>
+    <set>
+        <number>76391</number>
+        <name>Hogwarts Icons - Collectors' Edition</name>
+        <parts>2995</parts>
+        <minifigures>3</minifigures>
+        <tag>Harry Potter</tag>
+    </set>
+    <set>
+        <number>3722</number>
+        <name>Treasure Tomb</name>
+        <parts>147</parts>
+        <minifigures>3</minifigures>
+        <tag>adventurers</tag>
+        <tag>desert</tag>
+    </set>
+</sets>

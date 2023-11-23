@@ -1,0 +1,103 @@
+body /*szelektor/ jelölő*/ {
+    background-color: yellow;
+} /*deklarációs rész (kapcsoszárójeltől kapcsoszárójelig)*/
+/*szabályhalmaz (az egész)*/
+
+table {
+    margin: auto;
+    background-color: white;
+    border: medium solid dodgerblue;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px brown;
+}
+
+td::after /*pseudo selector*/ {
+    content: " g";
+}
+
+table > tbody > tr:first-child/*speudo osztály*/ > td::after {
+    content: " kcal";
+}
+
+table > tbody > tr > td:last-child::after {
+    content: " %";
+}
+
+/* specifikusság
+000
+
+1. számjegy -> id száma
+2. számjegy -> attribútum vagy pszeudo osztály
+3. számjegy -> elem vagy pszeudo elem
+
+pl.:
+body
+ - 0 id
+ - 0 attribútum vagy pszeudo osztály
+ - 1 elem (body) + 0 pszeudo elem
+specifikusság -> 001
+
+td::after
+ - 0 id
+ - 0 attribútum vagy pszeudo osztály
+ - 1 elem (td) + 1 pszeudo elem (::after)
+specifikusság -> 002
+
+table > tbody > tr:first-child > td::after {
+ - 0 id
+ - 0 attribútum + 1 pszeudo osztály (:first-child)
+ - 4 elem (table, tbody, tr, td) + 1 pszeudo elem (::after)
+specifikusság -> 015
+
+table > tbody > tr > td:last-child::after {
+ - 0 id
+ - 0 attribútum + 1 pszeudo osztály (:last-child)
+ - 4 elem (table, tbody, tr, td) + 1 pszeudo elem (::after)
+specifikusság -> 015
+
+(Ha a kurzort a szelektor felé viszed a vscode kiírja a specifikusságát)
+*/
+
+table > tbody > tr > td:first-of-type {
+    background-color: deepskyblue;
+}
+
+table > tbody > tr > td:nth-of-type(2) {
+    background-color: limegreen;
+}
+
+table > tbody > tr > td:nth-of-type(3) {
+    background-color: hotpink;
+}
+
+table > tbody > tr > td:last-of-type {
+    background-color: gold;
+}
+
+td {
+    color: white;
+}
+
+th {
+    color: black;
+}
+
+td, th {
+    font-weight: bold;
+    text-align: right;
+    vertical-align: middle;
+}
+
+table > tbody > tr:hover > th, table > tbody > tr:hover > td {
+    background-color: darkgray;
+    color: white;
+}
+
+/*
+table > tbody > tr:hover > th {
+ - 0 id
+ - 0 attribútum + 1 pszeudo osztály (:hover)
+ - 4 elem (table, tbody, tr, th) + 0 pszeudo elem
+specifikusság -> 014
+*/
