@@ -1,4 +1,4 @@
-body /*szelektor/ jelölő*/ {
+body /*szelektor*/ {
     background-color: yellow;
 } /*deklarációs rész (kapcsoszárójeltől kapcsoszárójelig)*/
 /*szabályhalmaz (az egész)*/
@@ -12,11 +12,11 @@ table {
     box-shadow: 5px 5px 20px brown;
 }
 
-td::after /*pseudo selector*/ {
+td::after /*pszeudo elem*/ {
     content: " g";
 }
 
-table > tbody > tr:first-child/*speudo osztály*/ > td::after {
+table > tbody > tr:first-child/*pszeudo osztály*/ > td::after {
     content: " kcal";
 }
 
@@ -25,36 +25,38 @@ table > tbody > tr > td:last-child::after {
 }
 
 /* specifikusság
-000
+háromelemű vektor
+(a, b, c)
+ahol a, b, és c nem negatív számok
 
-1. számjegy -> id száma
-2. számjegy -> attribútum vagy pszeudo osztály
-3. számjegy -> elem vagy pszeudo elem
+a -> ID-kiválasztók száma
+b -> attribútum-kiválasztók és pszeudo osztály kiválasztók száma
+c -> elemek és pszeudo elemek száma
 
 pl.:
 body
  - 0 id
  - 0 attribútum vagy pszeudo osztály
  - 1 elem (body) + 0 pszeudo elem
-specifikusság -> 001
+specifikusság -> (0, 0, 1)
 
 td::after
  - 0 id
- - 0 attribútum vagy pszeudo osztály
+ - 0 attribútum + 0 pszeudo osztály
  - 1 elem (td) + 1 pszeudo elem (::after)
-specifikusság -> 002
+specifikusság -> (0, 0, 2)
 
 table > tbody > tr:first-child > td::after {
  - 0 id
  - 0 attribútum + 1 pszeudo osztály (:first-child)
  - 4 elem (table, tbody, tr, td) + 1 pszeudo elem (::after)
-specifikusság -> 015
+specifikusság -> (0, 1, 5)
 
 table > tbody > tr > td:last-child::after {
  - 0 id
  - 0 attribútum + 1 pszeudo osztály (:last-child)
  - 4 elem (table, tbody, tr, td) + 1 pszeudo elem (::after)
-specifikusság -> 015
+specifikusság -> (0, 1, 5)
 
 (Ha a kurzort a szelektor felé viszed a vscode kiírja a specifikusságát)
 */
@@ -89,7 +91,7 @@ td, th {
     vertical-align: middle;
 }
 
-table > tbody > tr:hover > th, table > tbody > tr:hover > td {
+table > tbody > tr:hover > :nth-child(1n) {
     background-color: darkgray;
     color: white;
 }
@@ -99,5 +101,5 @@ table > tbody > tr:hover > th {
  - 0 id
  - 0 attribútum + 1 pszeudo osztály (:hover)
  - 4 elem (table, tbody, tr, th) + 0 pszeudo elem
-specifikusság -> 014
+specifikusság -> (0, 1, 4)
 */
