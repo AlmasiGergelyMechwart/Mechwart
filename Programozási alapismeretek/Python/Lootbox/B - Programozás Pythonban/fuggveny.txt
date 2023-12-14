@@ -1,0 +1,2 @@
+def dollarToEuro(arfolyam,ertek):
+    return round(0.5*ertek,2)
