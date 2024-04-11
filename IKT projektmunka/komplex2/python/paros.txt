@@ -1,0 +1,3 @@
+def paros(szam):
+	if szam%2==0:
+		return True
